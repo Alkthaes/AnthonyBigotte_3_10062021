@@ -7,6 +7,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @font-face {
@@ -31,16 +34,47 @@ a {
   text-decoration: none;
 }
 
-.restaurant-link {
+.restaurants {
+  background-color: #d6d2c7;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurants + h2 {
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.restaurant-link {
+  text-decoration: none;
+  color: black;
 }
 
 .card {
-  max-width: 768px;
+  max-width: 95%;
+  height: 250px;
+  background-color: white;
+  border-radius: 1rem;
 }
 
-.img-restaurant {
-  width: 250px;
-  height: 100px;
+p .img-restaurant {
+  width: 100%;
+  max-height: 175px;
+  border-radius: 1rem 1rem 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bloc-text h3 p {
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
