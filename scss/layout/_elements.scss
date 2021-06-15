@@ -1,34 +1,56 @@
 .restaurants {
-    background-color: #d6d2c7;
+    background-color: #f6f6f6;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    & + h2 {
-        justify-self: left;
-    }
 }
 
 .restaurant-link {
     text-decoration: none;
     color: black;
+    &_card {
+        max-width: 336px;
+        height: 250px;
+        background-color: white;
+        border-radius: 1rem;
+        margin: 0 20px 20px 20px;
+        &_img {
+            width: 100%;
+            max-height: 175px;
+            border-radius: 1rem 1rem 0 0;
+            object-fit: cover;
+    }
+    &_text {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+            'name . like'
+            'place . like'
+    }
+    }
 }
 
-.card {
-    max-width: 95%;
-    height: 250px;
-    background-color: white;
-    border-radius: 1rem;
-}
-p .img-restaurant {
-   width: 100%;
-   max-height: 175px;
-   border-radius: 1rem 1rem 0 0;
-   object-fit: cover;
+.restaurant-name {
+    grid-area: name;
 }
 
-.bloc-text h3 p {
-    display: inline;
-    margin: 0;
-    padding: 0;
+.restaurant-place {
+    grid-area: place;
 }
+
+#heart {
+    font-size: 1.7rem;
+    grid-area: like;
+    justify-self: center;
+    align-self: center;
+    &--filled {
+        font-size: 1.7rem;
+        grid-area: like;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+
+    

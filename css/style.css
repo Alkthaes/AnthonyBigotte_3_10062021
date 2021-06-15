@@ -1,28 +1,25 @@
 @font-face {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   src: url(../Fonts/Shrikhand-Regular.ttf);
 }
-
 @font-face {
-  font-family: 'Roboto Light';
+  font-family: "Roboto Light";
   src: url(../Fonts/Roboto-Light.ttf);
 }
-
 @font-face {
-  font-family: 'Roboto Bold';
+  font-family: "Roboto Bold";
   src: url(../Fonts/Roboto-Bold.ttf);
 }
-
 body {
-  font-family: 'Roboto Light';
+  font-family: "Roboto Light";
 }
 
 h1, .footer-heading {
-  font-family: 'Shrikhand', 'Open Sans';
+  font-family: "Shrikhand", "Open Sans";
 }
 
 h2 {
-  font-family: 'Roboto Bold';
+  font-family: "Roboto Bold";
   font-size: 1.2em;
 }
 
@@ -39,7 +36,7 @@ a {
 }
 
 .restaurant-name {
-  font-family: 'Roboto Bold';
+  font-family: "Roboto Bold";
   font-size: 1em;
 }
 
@@ -50,7 +47,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .restaurant-link {
@@ -71,18 +68,17 @@ a {
   max-height: 175px;
   border-radius: 1rem 1rem 0 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .restaurant-link_card_text {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-template-rows: auto;
   -ms-grid-columns: 2fr 1fr 1fr;
-      grid-template-columns: 2fr 1fr 1fr;
-      grid-template-areas: 'name . like'
- 'place . like';
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: "name . like" "place . like";
 }
 
 .restaurant-name {
@@ -104,10 +100,10 @@ a {
   -ms-grid-column: 3;
   grid-area: like;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 #heart--filled {
@@ -117,10 +113,10 @@ a {
   -ms-grid-column: 3;
   grid-area: like;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 body {
@@ -129,8 +125,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .bloc-page {
@@ -140,12 +136,15 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
+
+/*# sourceMappingURL=style.css.map */
+
 /*# sourceMappingURL=style.css.map */

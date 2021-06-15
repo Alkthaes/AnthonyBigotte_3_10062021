@@ -1,4 +1,17 @@
 @import './abstracts/variables';
-@import './base/normalize';
 @import './base/typography';
 @import './layout/elements';
+
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+.bloc-page {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
