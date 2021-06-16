@@ -1,0 +1,13 @@
+body {
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.bloc-page {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
