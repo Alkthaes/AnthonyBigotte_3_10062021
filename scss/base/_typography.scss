@@ -17,8 +17,9 @@ body {
     font-family: 'Roboto Light';
 }
 
-h1, .footer-heading {
-    font-family: 'Shrikhand', 'Open Sans';
+h1, .footer_heading {
+    margin-bottom: 5px;
+    font-family: 'Shrikhand', 'Open Sans'; 
 }
 
 h2 {
@@ -48,4 +49,6 @@ a {
     font-family: 'Roboto Bold';
     font-size: 1em;
 }
+
+
 

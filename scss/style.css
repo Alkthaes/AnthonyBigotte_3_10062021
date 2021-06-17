@@ -17,7 +17,8 @@ body {
   font-family: 'Roboto Light';
 }
 
-h1, .footer-heading {
+h1, .footer_heading {
+  margin-bottom: 5px;
   font-family: 'Shrikhand', 'Open Sans';
 }
 
@@ -61,7 +62,8 @@ body {
 }
 
 .bloc-page {
-  width: 375px;
+  min-width: 320px;
+  max-width: 882px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,6 +76,85 @@ body {
           align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.nav {
+  background-color: #f6f6f6;
+}
+
+.nav_geoloc {
+  background-color: #eaeaea;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_geoloc p {
+  padding-left: 60px;
+}
+
+.nav_geoloc_icone {
+  font-size: 1.3rem;
+}
+
+.nav_geoloc input {
+  border: none;
+  background-color: #eaeaea;
+  margin-left: 15px;
+  font-family: 'Roboto Bold';
+  font-size: 1rem;
+}
+
+.nav_introduction {
+  background-color: #f6f6f6;
+  height: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.nav_introduction h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+#btn-explore {
+  color: white;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  padding: 15px 20px;
+  border-radius: 2em;
+  font-family: 'Roboto Bold';
 }
 
 .guidelines {
@@ -138,11 +219,20 @@ body {
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
+  padding-bottom: 45px;
+}
+
+.restaurants_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .restaurant-link {
@@ -232,6 +322,12 @@ body {
   grid-row: 1;
   -ms-grid-column: 3;
   grid-column: 3;
+  color: #9356dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .new-tag {
@@ -243,5 +339,39 @@ body {
   position: absolute;
   top: 12px;
   right: 12px;
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(160, 160, 160, 0.85);
+  box-shadow: 0px 3px 15px 0px rgba(160, 160, 160, 0.85);
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  height: 198px;
+}
+
+footer a {
+  color: white;
+}
+
+.footer {
+  margin: 30px 0 0 25px;
+}
+
+.footer_heading {
+  margin-bottom: 25px;
+}
+
+.footer_nav {
+  font-size: 0.9em;
+}
+
+.footer_nav p {
+  margin-bottom: 10px;
+}
+
+.footer_icone {
+  font-size: 0.7em;
+  margin-right: 10px;
+  max-width: 10px;
 }
 /*# sourceMappingURL=style.css.map */
