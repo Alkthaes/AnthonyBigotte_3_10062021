@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(../Fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url(../Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url(../Fonts/Roboto-Bold.ttf);
+}
+
+body {
+  font-family: 'Roboto Light';
+}
+
+h1, .footer_heading {
+  margin-bottom: 5px;
+  font-family: 'Shrikhand', 'Open Sans';
+}
+
+h2 {
+  font-family: 'Roboto Bold';
+  font-size: 1.2em;
+}
+
+h3, p {
+  margin: 0;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.section-heading {
+  font-size: 1.3em;
+  margin: 60px 0 25px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-icone {
+  width: 15px;
+  height: 20px;
+}
+
+.restaurant-name {
+  font-family: 'Roboto Bold';
+  font-size: 1em;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.bloc-page {
+  min-width: 320px;
+  max-width: 882px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+img {
+  width: 375px;
+}
+
+.container {
+  width: 375px;
+}
+
+.container_menu {
+  background-color: #f6f6f6;
+}
+
+.container_menu_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_menu_items_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_menu_items_details_box {
+  background-color: white;
+  border-radius: 1rem;
+  width: 90%;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  height: 198px;
+}
+
+footer a {
+  color: white;
+}
+
+.footer {
+  margin: 30px 0 0 25px;
+}
+
+.footer_heading {
+  margin-bottom: 25px;
+}
+
+.footer_nav {
+  font-size: 0.9em;
+}
+
+.footer_nav p {
+  margin-bottom: 10px;
+}
+
+.footer_icone {
+  font-size: 0.7em;
+  margin-right: 10px;
+  max-width: 10px;
+}
+/*# sourceMappingURL=pages.css.map */

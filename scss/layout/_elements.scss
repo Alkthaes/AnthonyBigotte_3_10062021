@@ -147,6 +147,7 @@ header {
 }
 
 #heart {
+    display: block;
     font-size: 1.7rem;
     grid-area: like;
     justify-self: center;
@@ -154,6 +155,7 @@ header {
     grid-row: 1;
     grid-column: 3;
     &--filled {
+        display: block;
         font-size: 1.7rem;
         grid-area: like;
         justify-self: center;
@@ -167,7 +169,13 @@ header {
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
-       -webkit-text-fill-color:transparent;
+       -webkit-text-fill-color:transparent;   
+       transform: scale(0);
+       transform-origin: bottom;
+       transition: transform 2s;    
+        &:hover {
+            transform: scale(1);
+        }
         }
     }
 

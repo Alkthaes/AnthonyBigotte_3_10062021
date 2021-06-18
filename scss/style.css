@@ -31,6 +31,11 @@ h3, p {
   margin: 0;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
 .section-heading {
   font-size: 1.3em;
   margin: 60px 0 25px 20px;
@@ -291,6 +296,7 @@ header {
 }
 
 #heart {
+  display: block;
   font-size: 1.7rem;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -308,6 +314,7 @@ header {
 }
 
 #heart--filled {
+  display: block;
   font-size: 1.7rem;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -328,6 +335,19 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+#heart--filled:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .new-tag {
