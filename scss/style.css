@@ -34,6 +34,22 @@ h3, p {
 h4 {
   text-transform: uppercase;
   font-weight: lighter;
+  -ms-flex-item-align: initial;
+      -ms-grid-row-align: initial;
+      align-self: initial;
+  padding: 0 0 8px 20px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+h4:after {
+  content: '';
+  background: #99E2D0;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  height: 2px;
+  width: 40px;
 }
 
 .section-heading {
@@ -179,6 +195,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
 .guidelines_bloc {
@@ -238,6 +256,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
 .restaurant-link {
@@ -295,7 +315,7 @@ header {
   grid-column: 1;
 }
 
-#heart {
+.heart {
   display: block;
   font-size: 1.7rem;
   -ms-grid-row: 1;
@@ -313,7 +333,7 @@ header {
   grid-column: 3;
 }
 
-#heart--filled {
+.heart--filled {
   display: block;
   font-size: 1.7rem;
   -ms-grid-row: 1;
@@ -345,7 +365,7 @@ header {
   transition: transform 2s, -webkit-transform 2s;
 }
 
-#heart--filled:hover {
+.heart--filled:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
 }

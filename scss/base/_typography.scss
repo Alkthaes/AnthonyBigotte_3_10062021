@@ -34,6 +34,20 @@ h3, p {
 h4 {
     text-transform: uppercase;
     font-weight: lighter;
+    align-self: initial;
+    padding: 0 0 8px 20px;
+    margin-bottom: 15px;
+    //border-bottom: 2px solid $tertiary-color;
+    position: relative;
+    &:after {
+        content: '';
+        background: $tertiary-color;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        height: 2px;
+        width: 40px;
+    }
 }
 
 .section-heading {
@@ -42,7 +56,7 @@ h4 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 .menu-icone {

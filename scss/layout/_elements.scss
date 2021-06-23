@@ -59,6 +59,8 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        list-style: none;
+        padding: 0;
     }
     &_bloc {
         background-color: #f6f6f6;
@@ -101,6 +103,8 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        list-style: none;
+        padding: 0;
     }
 }
 
@@ -146,7 +150,7 @@ header {
     grid-column: 1;
 }
 
-#heart {
+.heart {
     display: block;
     font-size: 1.7rem;
     grid-area: like;
