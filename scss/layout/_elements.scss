@@ -229,6 +229,8 @@ header {
     grid-column: 3;
     &--filled {
         display: block;
+        //transform: scale(0);
+        transform-origin: bottom;
         font-size: 1.7rem;
         grid-area: like;
         justify-self: center;
@@ -242,13 +244,13 @@ header {
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
-       -webkit-text-fill-color:transparent;   
-       transform: scale(0);
-       transform-origin: bottom;
-       transition: transform 2s;    
-        &:hover {
-            transform: scale(1);
-        }
+       -webkit-text-fill-color:transparent;
+       opacity: 0;
+       &:hover {
+           animation: like;
+           animation-duration: 2s;
+           animation-fill-mode: forwards;
+       }   
         }
     }
 

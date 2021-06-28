@@ -54,16 +54,32 @@ header {
                 margin: 0;
                 padding-left: 0;
                 width: 375px;
+                @include transition;
             &_box {
                 background-color: white;
                 border-radius: 1rem;
                 width: 90%;
                 margin: 0 0 15px 20px;
-                display: grid;
-                grid-template-rows: auto;
-                grid-template-columns: 3fr 1fr;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
                 -webkit-box-shadow: 0px 10px 13px -7px #8a8a8aa2, 5px 5px 15px 5px rgba(0,0,0,0); 
                 box-shadow: 0px 10px 13px -7px #8a8a8aa2, 5px 5px 15px 5px rgba(0,0,0,0);
+                overflow: hidden;
+                transform: translateY(25px);
+                opacity: 0;
+                &:hover > .dish--select {
+                    animation: slide $anim-dur ease-in-out;
+                    animation-fill-mode: forwards;
+                }
+                &:hover  .checkmark {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &:hover  .fa-check-circle {
+                    animation: spin 600ms;
+                }
                 }
             }
         }
@@ -72,25 +88,47 @@ header {
 }
 
 .dish {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &_name {
     font-weight: bolder;
     margin: 15px 0 0 10px;
-    grid-row: 1;
-    grid-column: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
     &_description {
         font-size: 0.9rem;
-        grid-row: 2;
-        grid-column: 1;
         margin: 5px 0 12px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &_price {
         font-size: 0.9rem;
         font-weight: bolder;
-        align-self:center;
-        justify-self: right;
+        justify-self: flex-end;
         padding-right: 25px;
-        grid-row: 2;
-        grid-column: 2;
+        padding-bottom: 10px;
     }
+    &--select {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        max-width: 116.45px;
+    }
+}
+
+.checkmark {
+    height: 69px;
+    min-width: 67.5px;
+    background-color: $tertiary-color;
+    color: white;
+    border-radius: 0 1em 1em 0;
+    display: none;
 }
 
 .heart {
@@ -105,6 +143,20 @@ header {
         grid-column: 2;
         justify-self: center;
         align-self: center;
+        color: #9356dc;
+        background:-moz-linear-gradient(top, #9356dc 0%, #ff79da 100%); 
+        background: -webkit-linear-gradient(top, #9356dc 0%,#ff79da 100%); 
+        background: linear-gradient(to bottom, #9356dc 0%,#ff79da 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+       -webkit-text-fill-color:transparent;
+       opacity: 0;
+       &:hover {
+           animation: like;
+           animation-duration: 2s;
+           animation-fill-mode: forwards;
+       }
     }
 }
 

@@ -2,15 +2,15 @@
     0% {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
-      opacity: 100%;
+      visibility: visible;
     }
     99% {
-        opacity: 100%;
+        visibility: visible;
     }
     100% {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
-      opacity: 0%;
+      visibility: hidden;
     }
   }
 
@@ -25,4 +25,45 @@
           visibility: hidden;
       }
   }
+
+  @keyframes like {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
+  @keyframes spin {
+      0% {
+          transform: rotate(0);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  @keyframes slide {
+    0% {
+        transform: translateX(67.5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+  }
+
+  @keyframes menu {
+      0% {
+          visibility: hidden;
+          transform: translateY(25px);
+          opacity: 0;
+      }
+      100% {
+          display: visible;
+          transform: translateY(0px);
+          opacity: 1;
+      }
+  }
+      
   

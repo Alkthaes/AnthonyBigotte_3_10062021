@@ -1,0 +1,18 @@
+@mixin transition {
+    & {
+        animation: menu 600ms both;
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i * 500ms;
+            }
+        }
+    }
+    & > li {
+        animation: menu 300ms forwards;
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i * 150ms;
+            }
+        }
+    }
+}

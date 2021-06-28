@@ -2,15 +2,15 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    opacity: 100%;
+    visibility: visible;
   }
   99% {
-    opacity: 100%;
+    visibility: visible;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    opacity: 0%;
+    visibility: hidden;
   }
 }
 
@@ -18,15 +18,15 @@
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    opacity: 100%;
+    visibility: visible;
   }
   99% {
-    opacity: 100%;
+    visibility: visible;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    opacity: 0%;
+    visibility: hidden;
   }
 }
 
@@ -51,6 +51,98 @@
   }
   100% {
     visibility: hidden;
+  }
+}
+
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(67.5px);
+            transform: translateX(67.5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(67.5px);
+            transform: translateX(67.5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes menu {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    display: visible;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    display: visible;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -95,6 +187,9 @@ h4 {
       align-self: initial;
   padding: 0 0 8px 20px;
   margin-bottom: 15px;
+  opacity: 0;
+  -webkit-animation: menu 500ms forwards;
+          animation: menu 500ms forwards;
   position: relative;
 }
 
@@ -106,6 +201,10 @@ h4:after {
   left: 20px;
   height: 2px;
   width: 40px;
+}
+
+.fa-check-circle {
+  font-size: 1.8em;
 }
 
 .section-heading {
@@ -175,8 +274,8 @@ header {
   display: block;
   -webkit-animation: disappear;
           animation: disappear;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -196,8 +295,8 @@ header {
   right: 0;
   top: 200px;
   bottom: 0;
-  -webkit-animation: load3 1s linear;
-  animation: load3 1s linear;
+  -webkit-animation: load3 3s linear;
+  animation: load3 3s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateZ(0);
@@ -464,6 +563,8 @@ header {
 
 .heart--filled {
   display: block;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
   font-size: 1.7rem;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -484,19 +585,16 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
+  opacity: 0;
 }
 
 .heart--filled:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-animation: like;
+          animation: like;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .new-tag {
