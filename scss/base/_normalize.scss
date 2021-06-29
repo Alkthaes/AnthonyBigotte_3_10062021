@@ -4,9 +4,12 @@ body {
     margin: auto;
 }
 
+header {
+    background-color: white;
+}
+
 .bloc-page {
-    min-width: 320px;
-    max-width: 882px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

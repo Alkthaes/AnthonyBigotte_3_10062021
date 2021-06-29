@@ -70,17 +70,27 @@ header {
 
 .nav {
     background-color: #f6f6f6;
+    width: 100%;
     &_geoloc {
         background-color: #eaeaea;
         height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include for_breakpoint(tablet) {
+            height: 75px;
+        }
         & p {
             padding-left: 60px;
+            @include for_breakpoint(tablet) {
+                padding-left: 125px;
+            }
         }
         &_icone {
-            font-size: 1.3rem;
+            font-size: 1rem;
+            @include for_breakpoint(tablet) {
+                font-size: 1.8rem;
+            }
         }
         & input {
             border: none;
@@ -88,6 +98,10 @@ header {
             margin-left: 15px;
             font-family: 'Roboto Bold';
             font-size: 1rem;
+            @include for_breakpoint(tablet) {
+                font-size: 1.8rem;
+                margin-left: 30px;
+            }
         }
     }
     &_introduction {
@@ -98,15 +112,28 @@ header {
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
+        @include for_breakpoint(desktop) {
+            height: 325px;
+        };
         & h2 {
             font-size: 1.5em;
             margin-bottom: 0;
+            @include for_breakpoint(tablet) {
+                font-size: 1.8em;
+            }
         }
+        & p {
+            @include for_breakpoint(tablet) {
+                font-size: 1.4em;
+            }
+        }
+        
     }
 }
 
 #btn-explore {
     color: white;
+    font-size: 1em;
     background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     padding: 15px 20px;;
     border-radius: 2em;
@@ -118,12 +145,22 @@ header {
         -webkit-box-shadow: 0px 10px 13px -7px #4d4d4de5, 5px 5px 15px 5px rgba(0,0,0,0); 
         box-shadow: 0px 10px 13px -7px #4d4d4de5, 5px 5px 15px 5px rgba(0,0,0,0);
     }
+    @include for_breakpoint(tablet) {
+        font-size: 1.2em;
+        padding: 25px 30px;
+    }
 }
 
 .guidelines {
     background-color: white;
     width: 100%;
     height: 440px;
+    @include for_breakpoint(tablet) {
+        height: 625px;
+    }
+    @include for_breakpoint(desktop) {
+        height: 525px;
+    }
     &_box {
         display: flex;
         flex-direction: column;
@@ -134,17 +171,30 @@ header {
     &_bloc {
         background-color: #f6f6f6;
         position: relative;
-        width: 325px;
+        width: 70%;
         height: 75px;
         border-radius: 1em;
         margin-bottom: 22px;
         -webkit-box-shadow: 0px 3px 15px 0px rgba(160,160,160,0.85); 
         box-shadow: 0px 3px 15px 0px rgba(160,160,160,0.85);
+        @include for_breakpoint(tablet) {
+            height: 100px;
+        }
+        @include for_breakpoint(desktop) {
+            width: 40%;
+        }
+        &:nth-child(3) {
+            background-color: #f5edff;
+        }
         &_text {
             height: 100%;
+            font-size: 1em;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            @include for_breakpoint(tablet) {
+                font-size: 1.5em;
+            }
             & p {
                 font-family: 'Roboto Bold';
             }
@@ -159,6 +209,12 @@ header {
             left: -12px;
             top: 25px;
             padding: 4px 8px;
+            @include for_breakpoint(tablet) {
+                font-size: 1.3em;
+                left: -18px;
+                top: 35px;
+                padding: 6px 12px;
+            }
         }
     }
     
@@ -174,14 +230,43 @@ header {
         align-items: center;
         list-style: none;
         padding: 0;
+        @include for_breakpoint(desktop) {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: auto;
+        }
+        &_cards {
+            @include for_breakpoint(desktop) {
+                &:nth-child(1) {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+                &:nth-child(2) {
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                &:nth-child(3) {
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+                &:nth-child(4) {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+            }
+        }
     }
 }
 
 .restaurant-link {
     text-decoration: none;
     color: black;
+    display: flex;
+    justify-content: center;
+    @include for_breakpoint(desktop) {
+        margin-bottom: 25px;
+    }
     &_card {
-        max-width: 336px;
         height: 250px;
         background-color: white;
         border-radius: 1rem;
@@ -189,11 +274,21 @@ header {
         position: relative;
         -webkit-box-shadow: 0px 3px 15px 0px rgba(160,160,160,0.85); 
         box-shadow: 0px 3px 15px 0px rgba(160,160,160,0.85);
+        @include for_breakpoint(tablet) {
+            width: 70%;
+            height: 350px;
+        }
+        @include for_breakpoint(desktop) {
+            width:70%;
+        }
         &_img {
             width: 100%;
             max-height: 175px;
             border-radius: 1rem 1rem 0 0;
             object-fit: cover;
+            @include for_breakpoint(tablet) {
+                max-height: 235px;
+            }
     }
     &_text {
         margin: 15px 0 0 15px;
@@ -202,7 +297,11 @@ header {
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas: 
             'name . like'
-            'place . like'
+            'place . like';
+        @include for_breakpoint(tablet) {
+            margin: 15px 0 0 20px;
+        }
+        
     }
     }
 }
@@ -211,12 +310,19 @@ header {
     grid-area: name;
     grid-row: 1;
     grid-column: 1;
+    @include for_breakpoint(tablet) {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
 }
 
 .restaurant-place {
     grid-area: place;
     grid-row: 2;
     grid-column: 1;
+    @include for_breakpoint(tablet) {
+        font-size: 1.2em;
+    }
 }
 
 .heart {
@@ -227,6 +333,9 @@ header {
     align-self: center;
     grid-row: 1;
     grid-column: 3;
+    @include for_breakpoint(tablet) {
+        font-size: 2.1rem;
+    }
     &--filled {
         display: block;
         //transform: scale(0);
@@ -246,6 +355,9 @@ header {
         background-clip: text;
        -webkit-text-fill-color:transparent;
        opacity: 0;
+       @include for_breakpoint(tablet) {
+        font-size: 2.1rem;
+    }
        &:hover {
            animation: like;
            animation-duration: 2s;
@@ -266,24 +378,41 @@ header {
     right: 12px;
     -webkit-box-shadow: 0px 3px 15px 0px rgba(160,160,160,0.85); 
     box-shadow: 0px 3px 15px 0px rgba(160,160,160,0.85);
+    @include for_breakpoint(tablet) {
+        font-size: 1.3em;
+        padding: 10px 14px;
+        top: 16px;
+        right: 16px;
+    }
 }
 
 footer {
     background-color: #353535;
     color: white;
     height: 198px;
+    @include for_breakpoint(tablet) {
+        height: 230px;
+    }
     & a {
         color: white;
     }
 }
 
 .footer {
-    margin: 30px 0 0 25px;
+    padding: 30px 0 10px 25px;
+    height: auto;
     &_heading {
         margin-bottom: 25px;
+        @include for_breakpoint(tablet) {
+            font-size: 1.4em;
+        }
     }
     &_nav {
         font-size: 0.9em;
+        @include for_breakpoint(tablet) {
+            font-size: 1.2em;
+        }
+
         & p {
             margin-bottom: 10px;
         }

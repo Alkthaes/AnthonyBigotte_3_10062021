@@ -4,4 +4,9 @@ $tertiary-color: #99E2D0;
 $loader-duration: random(3) + s;
 $anim-dur: 400ms;
 $anim-delay: 300ms;
+$media-queries: (
+    'mobile': 'screen and (max-width: 767px)',
+    'tablet': 'screen and (min-width: 768px) and (max-width: 1024px)',
+    'desktop': 'screen and (min-width: 1025px)',
+); //map pour accéder plus facilement aux différents breakpoints
 
