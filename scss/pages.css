@@ -124,7 +124,7 @@
     opacity: 0;
   }
   100% {
-    display: visible;
+    visibility: visible;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
@@ -139,7 +139,7 @@
     opacity: 0;
   }
   100% {
-    display: visible;
+    visibility: visible;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
@@ -193,9 +193,6 @@ h3, p {
 h4 {
   text-transform: uppercase;
   font-weight: lighter;
-  -ms-flex-item-align: initial;
-      -ms-grid-row-align: initial;
-      align-self: initial;
   padding: 0 0 8px 20px;
   margin-bottom: 15px;
   opacity: 0;
@@ -226,7 +223,7 @@ h4:after {
   width: 40px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px), screen and (min-width: 1025px), screen and (min-width: 1400px) {
   h4:after {
     width: 60px;
   }
@@ -332,7 +329,7 @@ header a {
 
 .fa-arrow-left {
   position: absolute;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-right: 70px;
   font-size: 1.2em;
   left: -2%;
@@ -433,51 +430,6 @@ img {
   width: 375px;
 }
 
-.container_menu_items_details {
-  -webkit-animation: menu 600ms both;
-          animation: menu 600ms both;
-}
-
-.container_menu_items_details:nth-child(1) {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
-.container_menu_items_details:nth-child(2) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-.container_menu_items_details:nth-child(3) {
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-}
-
-.container_menu_items_details > li {
-  -webkit-animation: menu 300ms forwards;
-          animation: menu 300ms forwards;
-}
-
-.container_menu_items_details > li:nth-child(1) {
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
-}
-
-.container_menu_items_details > li:nth-child(2) {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-}
-
-.container_menu_items_details > li:nth-child(3) {
-  -webkit-animation-delay: 450ms;
-          animation-delay: 450ms;
-}
-
-.container_menu_items_details > li:nth-child(4) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container_menu_items_details {
     width: 525px;
@@ -512,6 +464,69 @@ img {
   opacity: 0;
 }
 
+.container_menu_items_details_box:nth-child(1) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.container_menu_items_details_box:nth-child(2) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.container_menu_items_details_box:nth-child(3) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.container_menu_items_details_box:nth-child(4) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.container_menu_items_details_box:nth-child(5) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.container_menu_items_details_box:nth-child(6) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.container_menu_items_details_box:nth-child(7) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+
+.container_menu_items_details_box:nth-child(8) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+.container_menu_items_details_box:nth-child(9) {
+  -webkit-animation: menu 150ms forwards;
+          animation: menu 150ms forwards;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px), screen and (min-width: 1025px) {
   .container_menu_items_details_box {
     height: 88px;
@@ -540,6 +555,26 @@ img {
 .container_menu_items_details_box:hover .fa-check-circle {
   -webkit-animation: spin 600ms;
           animation: spin 600ms;
+}
+
+.apparition {
+  -webkit-animation: menu 500ms both;
+          animation: menu 500ms both;
+}
+
+.apparition:nth-child(1) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.apparition:nth-child(2) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.apparition:nth-child(3) {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
 }
 
 .dish {

@@ -396,7 +396,7 @@ footer {
     background-color: #353535;
     color: white;
     height: 198px;
-    @include for_breakpoint(tablet) {
+    @include for_breakpoint(tablet desktop) {
         height: 230px;
     }
     & a {
@@ -409,13 +409,13 @@ footer {
     height: auto;
     &_heading {
         margin-bottom: 25px;
-        @include for_breakpoint(tablet) {
+        @include for_breakpoint(tablet desktop) {
             font-size: 1.4em;
         }
     }
     &_nav {
         font-size: 0.9em;
-        @include for_breakpoint(tablet) {
+        @include for_breakpoint(tablet desktop) {
             font-size: 1.2em;
         }
 

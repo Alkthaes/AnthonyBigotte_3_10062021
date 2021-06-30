@@ -124,7 +124,7 @@
     opacity: 0;
   }
   100% {
-    display: visible;
+    visibility: visible;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
@@ -139,7 +139,7 @@
     opacity: 0;
   }
   100% {
-    display: visible;
+    visibility: visible;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
@@ -193,9 +193,6 @@ h3, p {
 h4 {
   text-transform: uppercase;
   font-weight: lighter;
-  -ms-flex-item-align: initial;
-      -ms-grid-row-align: initial;
-      align-self: initial;
   padding: 0 0 8px 20px;
   margin-bottom: 15px;
   opacity: 0;
@@ -226,7 +223,7 @@ h4:after {
   width: 40px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px), screen and (min-width: 1025px), screen and (min-width: 1400px) {
   h4:after {
     width: 60px;
   }
@@ -330,8 +327,8 @@ header {
   display: block;
   -webkit-animation: disappear;
           animation: disappear;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -351,8 +348,8 @@ header {
   right: 0;
   top: 200px;
   bottom: 0;
-  -webkit-animation: load3 1s linear;
-  animation: load3 1s linear;
+  -webkit-animation: load3 3s linear;
+  animation: load3 3s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateZ(0);
@@ -888,7 +885,7 @@ footer {
   height: 198px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px), screen and (min-width: 1025px) {
   footer {
     height: 230px;
   }
@@ -907,7 +904,7 @@ footer a {
   margin-bottom: 25px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px), screen and (min-width: 1025px) {
   .footer_heading {
     font-size: 1.4em;
   }
@@ -917,7 +914,7 @@ footer a {
   font-size: 0.9em;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px), screen and (min-width: 1025px) {
   .footer_nav {
     font-size: 1.2em;
   }

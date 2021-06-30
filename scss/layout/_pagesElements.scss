@@ -13,7 +13,7 @@ header {
 
 .fa-arrow-left {
     position: absolute;
-    margin-left: 15px;
+    margin-left: 25px;
     margin-right: 70px;
     font-size: 1.2em;
     left: -2%;
@@ -76,7 +76,6 @@ header {
                 margin: 0;
                 padding-left: 0;
                 width: 375px;
-                @include transition;
                 @include for_breakpoint(tablet) {
                     width: 525px;
                 }
@@ -96,6 +95,7 @@ header {
                 overflow: hidden;
                 transform: translateY(25px);
                 opacity: 0;
+                @include apparition;
                 @include for_breakpoint(tablet desktop) {
                     height: 88px;
                 }
@@ -116,6 +116,10 @@ header {
         }
         
     }
+}
+
+.apparition {
+    @include transition;
 }
 
 .dish {
