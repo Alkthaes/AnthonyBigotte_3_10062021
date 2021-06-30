@@ -183,6 +183,9 @@ header {
         @include for_breakpoint(desktop) {
             width: 40%;
         }
+        @include for_breakpoint(large) {
+            width: 30%;
+        }
         &:nth-child(3) {
             background-color: #f5edff;
         }
@@ -280,6 +283,9 @@ header {
         }
         @include for_breakpoint(desktop) {
             width:70%;
+        }
+        @include for_breakpoint(large) {
+            width: 50%;
         }
         &_img {
             width: 100%;

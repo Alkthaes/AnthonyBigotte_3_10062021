@@ -18,7 +18,8 @@ body {
 }
 
 h1 {
-    @include for_breakpoint(tablet) {
+    justify-self: center;
+    @include for_breakpoint(tablet desktop) {
         font-size: 3em;
     }
 }
@@ -46,6 +47,12 @@ h4 {
     opacity: 0;
     animation: menu 500ms forwards;
     position: relative;
+    @include for_breakpoint(tablet) {
+        font-size: 1.5em;
+    }
+    @include for_breakpoint(desktop) {
+        font-size: 1.6em;
+    }
     &:after {
         content: '';
         background: $tertiary-color;
@@ -54,6 +61,9 @@ h4 {
         left: 20px;
         height: 2px;
         width: 40px;
+        @include for_breakpoint(tablet) {
+            width: 60px;
+        }
     }
 }
 
@@ -63,6 +73,9 @@ h4 {
 
 .fa-check-circle {
     font-size: 1.8em;
+    @include for_breakpoint(tablet desktop) {
+        font-size: 2.2em;
+    }
 }
 
 .section-heading {
