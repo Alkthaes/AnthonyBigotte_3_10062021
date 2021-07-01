@@ -20,7 +20,7 @@
         
     }
 }
-
+//mixin simplifiant la rédaction des media queries en renseignant seulement le mot-clé du breakpoint
 @mixin for_breakpoint($breakpoints) {
     $conditions: ();
     @each $breakpoint in $breakpoints {
