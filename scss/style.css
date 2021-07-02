@@ -327,8 +327,8 @@ header {
   display: block;
   -webkit-animation: disappear;
           animation: disappear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -348,8 +348,8 @@ header {
   right: 0;
   top: 200px;
   bottom: 0;
-  -webkit-animation: load3 2s linear;
-  animation: load3 2s linear;
+  -webkit-animation: load3 1s linear;
+  animation: load3 1s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateZ(0);
@@ -523,9 +523,9 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px), screen and (min-width: 1400px) {
   .guidelines {
-    height: 525px;
+    height: 575px;
   }
 }
 
@@ -542,6 +542,18 @@ header {
           align-items: center;
   list-style: none;
   padding: 0;
+}
+
+@media screen and (min-width: 1025px), screen and (min-width: 1400px) {
+  .guidelines_box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .guidelines_bloc {
@@ -561,15 +573,10 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px), screen and (min-width: 1400px) {
   .guidelines_bloc {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .guidelines_bloc {
-    width: 30%;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -597,8 +604,27 @@ header {
   }
 }
 
+@media screen and (min-width: 1025px), screen and (min-width: 1400px) {
+  .guidelines_bloc_text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: larger;
+  }
+}
+
 .guidelines_bloc_text p {
   font-family: 'Roboto Bold';
+}
+
+@media screen and (min-width: 1025px), screen and (min-width: 1400px) {
+  .guidelines_bloc_text p {
+    margin-top: 20px;
+  }
 }
 
 .guidelines_bloc_digit {
@@ -619,6 +645,15 @@ header {
     left: -18px;
     top: 35px;
     padding: 6px 12px;
+  }
+}
+
+@media screen and (min-width: 1025px), screen and (min-width: 1400px) {
+  .guidelines_bloc_digit {
+    font-size: larger;
+    left: 44%;
+    top: -18px;
+    padding: 10px 16px;
   }
 }
 

@@ -158,8 +158,8 @@ header {
     @include for_breakpoint(tablet) {
         height: 625px;
     }
-    @include for_breakpoint(desktop) {
-        height: 525px;
+    @include for_breakpoint(desktop large) {
+        height: 575px;
     }
     &_box {
         display: flex;
@@ -167,6 +167,10 @@ header {
         align-items: center;
         list-style: none;
         padding: 0;
+        @include for_breakpoint(desktop large) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     }
     &_bloc {
         background-color: #f6f6f6;
@@ -180,11 +184,9 @@ header {
         @include for_breakpoint(tablet) {
             height: 100px;
         }
-        @include for_breakpoint(desktop) {
-            width: 40%;
-        }
-        @include for_breakpoint(large) {
-            width: 30%;
+        @include for_breakpoint(desktop large) {
+            width: 300px;
+            height: 300px;
         }
         &:nth-child(3) {
             background-color: #f5edff;
@@ -198,8 +200,16 @@ header {
             @include for_breakpoint(tablet) {
                 font-size: 1.5em;
             }
+            @include for_breakpoint(desktop large) {
+                flex-direction: column;
+                justify-content: center;
+                font-size: larger;
+            }
             & p {
                 font-family: 'Roboto Bold';
+                @include for_breakpoint(desktop large) {
+                    margin-top: 20px;
+                }
             }
         }
         &_digit {
@@ -217,6 +227,12 @@ header {
                 left: -18px;
                 top: 35px;
                 padding: 6px 12px;
+            }
+            @include for_breakpoint(desktop large) {
+                font-size: larger;
+                left: 44%;
+                top: -18px;
+                padding: 10px 16px;
             }
         }
     }
