@@ -120,6 +120,8 @@ header {
 
 .apparition {
     @include transition;
+    display: flex;
+    flex-direction: column;
 }
 
 .dish {

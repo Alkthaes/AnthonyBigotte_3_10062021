@@ -1,9 +1,10 @@
 @mixin transition {
     & {
-        animation: menu 500ms both;
+        animation: menu 1500ms both;
         @for $i from 1 through 3 {
-            &:nth-child(#{$i}) {
-                animation-delay: $i * 600ms;
+            $next: $i + 1;
+            &:nth-child(#{$next}) {
+                animation-delay: $i * 500ms;
             }
         }
     }
@@ -12,9 +13,10 @@
 @mixin apparition {
     @each $li in lis {
         @for $i from 1 to 10 {
+            //$next: $i + 1;
             &:nth-child(#{$i}) {
-                    animation: menu 150ms forwards;
-                    animation-delay: $i * 200ms;
+                    animation: menu 300ms forwards;
+                    animation-delay: $i * 300ms;
             }
         }
         

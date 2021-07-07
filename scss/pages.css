@@ -191,6 +191,9 @@ h3, p {
 }
 
 h4 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-transform: uppercase;
   font-weight: lighter;
   padding: 0 0 8px 20px;
@@ -465,66 +468,66 @@ img {
 }
 
 .container_menu_items_details_box:nth-child(1) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 .container_menu_items_details_box:nth-child(2) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.container_menu_items_details_box:nth-child(3) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
+.container_menu_items_details_box:nth-child(3) {
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
 .container_menu_items_details_box:nth-child(4) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
-.container_menu_items_details_box:nth-child(5) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-.container_menu_items_details_box:nth-child(6) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
 }
 
+.container_menu_items_details_box:nth-child(5) {
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.container_menu_items_details_box:nth-child(6) {
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
 .container_menu_items_details_box:nth-child(7) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
-  -webkit-animation-delay: 1400ms;
-          animation-delay: 1400ms;
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
 }
 
 .container_menu_items_details_box:nth-child(8) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
-  -webkit-animation-delay: 1600ms;
-          animation-delay: 1600ms;
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
 }
 
 .container_menu_items_details_box:nth-child(9) {
-  -webkit-animation: menu 150ms forwards;
-          animation: menu 150ms forwards;
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
+  -webkit-animation: menu 300ms forwards;
+          animation: menu 300ms forwards;
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px), screen and (min-width: 1025px) {
@@ -558,23 +561,33 @@ img {
 }
 
 .apparition {
-  -webkit-animation: menu 500ms both;
-          animation: menu 500ms both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.apparition:nth-child(1) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+.apparition {
+  -webkit-animation: menu 1500ms both;
+          animation: menu 1500ms both;
 }
 
 .apparition:nth-child(2) {
-  -webkit-animation-delay: 1200ms;
-          animation-delay: 1200ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 .apparition:nth-child(3) {
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.apparition:nth-child(4) {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .dish {

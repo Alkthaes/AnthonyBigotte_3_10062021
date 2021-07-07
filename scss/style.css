@@ -191,6 +191,9 @@ h3, p {
 }
 
 h4 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-transform: uppercase;
   font-weight: lighter;
   padding: 0 0 8px 20px;
@@ -327,8 +330,8 @@ header {
   display: block;
   -webkit-animation: disappear;
           animation: disappear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -348,8 +351,8 @@ header {
   right: 0;
   top: 200px;
   bottom: 0;
-  -webkit-animation: load3 2s linear;
-  animation: load3 2s linear;
+  -webkit-animation: load3 1s linear;
+  animation: load3 1s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: translateZ(0);
